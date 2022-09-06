@@ -5,10 +5,10 @@
 }
 html {
   --primary-color:rgba(0, 0, 0, 0.96);
-  --secundary-color: yellow; 
-  --third-color:#FFEC89;
+  --secundary-color:#4509A8; 
+  /* --third-color:#FFEC89; */
   --text-color:#fff;
-  --subtext-color:rgba(0, 0, 0, 0.8);
+  --subtext-color:#19fb43;
   --subtext2-color:rgba(0, 0, 0, 0.4);
 }
 body {
@@ -16,75 +16,102 @@ body {
   color: var(--text-color);
   font-family: 'Roboto', sans-serif;
   background-color:var(--primary-color);
-  /* background: url(./src/nadiCode.png); */
-  background-size:cover;
   text-align: center;
   display:block;
   align-items:center;
   justify-content:center;
-  gap:1rem;
+  gap:.5rem;
 }
 .name{
   font-family: 'Montez', cursive;
-  font-style: bold;
-  font-weight: 400;
-  font-size: 8rem;
+  font-weight: 100;
+  font-size: 6rem;
+}
+.subtitle{
+  font-weight: 100;
+  font-size: 2rem;
 }
 .container{
   font-style: bold;
   font-weight: 400;
   font-size: 16px;
   display:flex;
-  justify-content:betwen;
+  justify-content:space-between;
   align-content: center;
+  /* flex-wrap:wrap; */
+  padding:0 2rem;
 }
 .avatar{
   width:20rem;
-  margin-top:-3rem;
+  margin-top:-1.5rem;
+  position:relative;
+  z-index:3;
 }
-.foll{
-  display:flex;
+.devrel{
+  margin-top:10rem;
+}
+.coder{
+  margin-top:10rem;
+} 
+strong{
+  color:var(--subtext-color);
+  opacity:.8;
+}
+.title{
+  font-style: bold;
+  font-weight: 400;
+  font-size: 5rem;
+}
+.subtitel3{
+  opacity:0.1;
+  position:absolute;
+  margin-left:-10rem;
+  margin-top:8rem;
+  z-index:1;
+  font-weight: 100;
+  font-size:1.5rem;
+}
+.details{
+  display:block;
   justify-content:center;
-  gap:3rem;
-  padding-top:1.5rem;
-}
-.followers{
-  color:var(--secundary-color);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 7rem;
-  display:flex;
-  justify-content:center;
-}
-.following{
-  color:var(--secundary-color);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 7rem;
-  display:flex;
-  justify-content:center;
-}
-.footer{
-  margin-top:3rem;
-  padding:1rem;
-  background-color:var(--text-color);
-  color:var(--subtext2-color);
+  align-content: center;
 }
 .bio{
-  margin-top:2rem;
-  color:var(--third-color);
+  width:full;
+  padding:0 18rem;
+  padding-bottom:1rem;
+  display:block;
+  justify-content:center;
+  align-content: center;
+  border-color:red;
 }
-.api{
-  color:var(--subtext-color);
-  opacity:1;
-}
-.received_events_url{
-  opacity: 0.9;
-  padding-top:2rem;
+.github{
+  opacity:0.7;
+  color:var(--text-color);
   cursor: pointer;
   text-decoration:none;
 }
-.received_events_url:hover {
-  opacity: 1;
+.github:hover {
+  opacity:1;
+  cursor: pointer;
+}
+footer{
+  background-color:var(--text-color);
+  color:var(--secundary-color);
+  display:flex;
+  justify-content:space-evenly;
+  align-content: center;
+  padding:1rem;
+}
+.linkedin{
+  opacity:1;
+  font-style: bold;
+  font-weight:400;
+  font-size:1rem;
+  cursor: pointer;
+  text-decoration:none;
+}
+.linkedin:hover {
+  opacity:.8;
   cursor: pointer;
 }
