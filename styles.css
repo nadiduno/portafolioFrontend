@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  --primary-color:rgba(0, 0, 0, 0.96);
+  --secundary-color: yellow; 
+  --third-color:#FFEC89;
+  --text-color:#fff;
+  --subtext-color:rgba(0, 0, 0, 0.8);
+  --subtext2-color:rgba(0, 0, 0, 0.4);
+}
+body {
+  background:var(--primary-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  background-color:var(--primary-color);
+  /* background: url(./src/nadiCode.png); */
+  background-size:cover;
+  text-align: center;
+  display:block;
+  align-items:center;
+  justify-content:center;
+  gap:1rem;
+}
+.name{
+  font-family: 'Montez', cursive;
+  font-style: bold;
+  font-weight: 400;
+  font-size: 8rem;
+}
+.container{
+  font-style: bold;
+  font-weight: 400;
+  font-size: 16px;
+  display:flex;
+  justify-content:betwen;
+  align-content: center;
+}
+.avatar{
+  width:20rem;
+  margin-top:-3rem;
+}
+.foll{
+  display:flex;
+  justify-content:center;
+  gap:3rem;
+  padding-top:1.5rem;
+}
+.followers{
+  color:var(--secundary-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7rem;
+  display:flex;
+  justify-content:center;
+}
+.following{
+  color:var(--secundary-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7rem;
+  display:flex;
+  justify-content:center;
+}
+.footer{
+  margin-top:3rem;
+  padding:1rem;
+  background-color:var(--text-color);
+  color:var(--subtext2-color);
+}
+.bio{
+  margin-top:2rem;
+  color:var(--third-color);
+}
+.api{
+  color:var(--subtext-color);
+  opacity:1;
+}
+.received_events_url{
+  opacity: 0.9;
+  padding-top:2rem;
+  cursor: pointer;
+  text-decoration:none;
+}
+.received_events_url:hover {
+  opacity: 1;
+  cursor: pointer;
+}
